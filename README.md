@@ -45,11 +45,14 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 * order all the components from the list above.
 
 * Cut the drv8833 according to (Pololu's instructions)[https://www.pololu.com/product/2130] and check the Isense pins are NOT grounded:
-<img src="images/drv8833.png" alt="diagram" width="277"/>
+<img src="images/drv8833.PNG" alt="diagram" width="277"/> 
+[image was taken from Pololu website]
+
 *Tip: cut with a sharp knife the two lines, check with multimeter the resistence between AISEN/BISEN and GND. should be ~100Mohms*
 
 * solder the headers of the drv8833 so the chip faces upward:
-<img src="images/drv8833_board.png" alt="diagram" width="277"/>
+<img src="images/drv8833_board.PNG" alt="diagram" width="277"/> 
+[image was taken from Pololu website]
 
 * Solder the top side of the board (all components without the ESP32)
 <img src="images/Oded's_Hand_v7_CAD_top.png" alt="diagram" width="277"/>
