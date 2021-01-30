@@ -56,7 +56,8 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 
 * Solder the top side of the board (all components without the ESP32)
 <img src="images/Oded's_Hand_v7_CAD_top.png" alt="diagram" width="277"/>
-*Tip: start from the led --> the drivers (drv8833) --> connectors --> all resistors --> Switch*
+
+*Tip: start from the led --> drivers (drv8833)-->connectors --> resistors --> Switch*
 
 * Check all the connection with a multimeter, to make sure everything was soldered correctly. Then cut all the pins so when you insert the esp32 controller to the bottom part nothing touches the controller. Only then solder the esp32 to its place.
 <img src="images/Oded's_Hand_v7_CAD_bottom.png" alt="diagram" width="277"/>
