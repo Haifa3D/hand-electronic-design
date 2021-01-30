@@ -44,7 +44,7 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 
 * order all the components from the list above.
 
-* Cut the drv8833 according to (Pololu's instructions)[https://www.pololu.com/product/2130] and check the Isense pins are NOT grounded:
+* Cut the drv8833 according to [Pololu's instructions](https://www.pololu.com/product/2130) and check the Isense pins are NOT grounded:
 <img src="images/drv8833.PNG" alt="diagram" width="277"/> 
 [image was taken from Pololu website]
 
