@@ -22,7 +22,7 @@ The design is suitable for users with transradial amputation (below the elbow).
 We welcome any new developers to enhance our design or to use the Oded Hand as a simulator for your new sensors/algorithms/methods that would potentially help users to control their prosthetic hand.
 
 ## Design Files and Versions  
-The STL files for the battery housing and the circuit housing can be found [here](CAD_files). The gerber files of the PCB design can be found [here](gerber_files/CAMOutputs) as well as the [schematic and layout](docs). The EAGLE files for modifying the board can be found [here](EAGLE_files). The Arduino code for the controller can be downloaded from [here](Oded_Hand_board7_app2_4_6).
+The STL files for the battery housing and the circuit housing can be found [here](CAD_files). The gerber files of the PCB design can be found [here](gerber_files/CAMOutputs) as well as the [schematic and layout](docs). The EAGLE files for modifying the board can be found [here](EAGLE_files). The Arduino code for the controller can be downloaded from [here](controller_software/Oded_Hand_board7_app2_4_6).
 
 ## Getting Started:
 To build the electronic system for Oded Hand you will need a basic knowledge of soldering and the following componenets: 
