@@ -11,6 +11,7 @@ The Oded Hand can perform a variety of user-defined hand configurations using an
 The electrical design consists of four fingers with four different tendon-driven mechanisms actuated by four different micro-DC motors, a passive thumb with two discrete positions using two magnets and wrist rotation driven by planetary gears and a DC motor. 
 
 Basically, the electronic system consists of:
+* The circuit and controller code
 * The circuit housing and socket
 * The batteries housing
 
@@ -70,6 +71,25 @@ After you complete the PCB assembly of Oded's Hand, please refer to the [Mechani
 
 ## The Controller Software (Arduino code):
 The code can be found [here](controller_software/Oded_Hand_board7_app2_4_6)
+
+## The Circuit Housing and Socket
+[Here](hand-electronic-design/CAD_files/circuit_housing), you can find the CAD of the circuit itself, the housing of the circuit top and bottom parts and the socket design we are using.
+The socket is basically a flat surface which can be thermoformed and adjusted to fit the user arm. Usually the important measurements are the perimeter and length od the user's arm.
+
+recommendation, merge the bottom part of the circuit housing into your socket design. If it is based on thermoforming, heat the inner part of the socket so the bottom part of the circuit housing will not get deformed.
+
+To assemble the circuit housing you will need 3 x M2.5 self tap screw to mount the PCB to the bottom part and 2-6 x M2 self tap screw to connect the top to the bottom. To connect the hand to the socket you can use 3 x M2.5 self tap screw as well.
+
+<img src="images/circuit_housing.jpg" alt="diagram" width="382"/>
+
+## The Batteries Housing
+You can use any two connected batteries in series. To assemble your own battery pack:
+* print the [batteries housing files](CAD_files/batteries_housing)
+* make sure the batteries can slide in and does not get stuck at the housing walls.
+* Solder the battery Spring Contact Plate
+* Insert the filaments to mount the contact plates to the housing
+
+<img src="images/batteries_housing.jpg" alt="diagram" width="382"/>
 
 ## Acknowledgements:
 This project was done by a group of great people and with the help and guidance of generous organizations.
