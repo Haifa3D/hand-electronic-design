@@ -97,6 +97,12 @@ You can use any two connected batteries in series to power the circuit. To assem
 
 <img src="images/batteries_housing.jpg" alt="diagram" width="382"/>
 
+## So What To Do Next?
+If you have developed a user interface for prosthetic hands and want to implement it on a low-cost prosthetic hand, you can communicate with our Hand in three different ways:
+* if your sensors and system are on the hand and arm - you can implement your code to our controller code and solder your system to the free pins (GPIO2,12,25)
+* if your system is android-based - use our [**mobile app and SDK**](https://github.com/Haifa3D/haifa3d-hand-app) to wirelessly communicate with our Hand 
+* if your system is esp32-based - use the example Arduino IDE code [here](controller_software/Hand_UI_demo_BLEclient) to communicate with our Hand using the built-in BLE of the esp32 controller.
+
 ## Acknowledgements:
 This project was done by a group of great people and with the help and guidance of generous organizations.
 
@@ -105,3 +111,6 @@ This project was done by a group of great people and with the help and guidance 
 *Users Communication*: Haifa 3D – a nonprofit organization that designs and builds hands for free, founded by Yoav Medan and Yacov Malinovich.
 
 *Resources*: The Technion - Israel Institute of Technology and special thanks to Prof. Alon Wolf and the Biorobotics and Biomechanics Lab.
+
+## Donation:
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=GGFJLZDB9GWXE)
