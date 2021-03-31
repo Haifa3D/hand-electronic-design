@@ -74,20 +74,26 @@ The code can be found [here](controller_software/Oded_Hand_board7_app2_4_6)
 
 ## The Circuit Housing and Socket
 [Here](hand-electronic-design/CAD_files/circuit_housing), you can find the CAD of the circuit itself, the housing of the circuit top and bottom parts and the socket design we are using.
-The socket is basically a flat surface which can be thermoformed and adjusted to fit the user arm. Usually the important measurements are the perimeter and length od the user's arm.
+The socket is basically a flat surface which can be thermoformed and adjusted to fit the user arm. Usually the important measurements are the perimeter and length of the user's arm.
 
-recommendation, merge the bottom part of the circuit housing into your socket design. If it is based on thermoforming, heat the inner part of the socket so the bottom part of the circuit housing will not get deformed.
+*Recommendation, merge the bottom part of the circuit housing into your socket design and print it as one part. If your socket design is based on thermoforming, heat the inner part of the socket so the bottom part of the circuit housing will not get deformed*.
 
-To assemble the circuit housing you will need 3 x M2.5 self tap screw to mount the PCB to the bottom part and 2-6 x M2 self tap screw to connect the top to the bottom. To connect the hand to the socket you can use 3 x M2.5 self tap screw as well.
+To assemble the circuit housing you will need **3 x M2.5 5-8mm self tap screws** to mount the PCB to the bottom part and **2 x M2 5-6mm self tap screws** to connect the top to the bottom. To connect the hand to the socket you can use **3 x M2.5 5-8mm self tap screws** as well.
 
 <img src="images/circuit_housing.jpg" alt="diagram" width="382"/>
 
+*the circuit on the socket is from a previous version where we had 3 more buttons on the hand instead of the mobile app control.*
+
 ## The Batteries Housing
-You can use any two connected batteries in series. To assemble your own battery pack:
-* print the [batteries housing files](CAD_files/batteries_housing)
+You can use any two connected batteries in series to power the circuit. To assemble your own battery pack:
+* print the [batteries housing files](CAD_files/batteries_housing) (*Notice the printing orientation - the 'battery_top' should be printed so its snap is parallel to the ground*)
 * make sure the batteries can slide in and does not get stuck at the housing walls.
-* Solder the battery Spring Contact Plate
-* Insert the filaments to mount the contact plates to the housing
+* Solder the battery Spring Contact Plate - at the 'battery-top' (the lid) the plates should be soldered to each other and at the bottom each plate should be soldered to a different wire (the maximal total current can be 2.5 amp so make sure you select a suitible wire)
+* Insert the filaments to mount the contact plates to the rectangular slots at the top and bottom parts. make sure the plates are not touching each other at the bottom part (otherwise you are going to short the batteries).
+* cut the excessive filaments and heat the ends (see the yellow fillaments in the image below)
+* screw the bottom prat to the body using two **M2 4-5mm self tap screws**
+* check the connection and add a 2PIN Female KF2510 Connector to the wires.
+* cut an elastic strap and sew velcro (or just buy a suitible velcro elatic strap) to fasten the Battery Pack to your upper arm. a design for backles and rings are also available at the same folder.
 
 <img src="images/batteries_housing.jpg" alt="diagram" width="382"/>
 
