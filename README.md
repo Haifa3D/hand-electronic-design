@@ -7,20 +7,20 @@ The aim of this design is to be low cost, accessible, easy to assemble, robust a
 <img src="images/pcb_cad.gif" alt="diagram" width="277"/>   <img src="images/long_ver.gif" alt="hand_gif" width="382"/>  
 
 ## Design Description  
-The Oded Hand can perform a variety of user-defined hand configurations using an autonomous adaptive grip along with a variety of grip force levels.
-The electrical design consists of four fingers with four different tendon-driven mechanisms actuated by four different micro-DC motors, a passive thumb with two discrete positions using two magnets and wrist rotation driven by planetary gears and a DC motor. 
+The Oded Hand can perform a variety of user-defined hand configurations using an autonomous adaptive grip along with a variety of configurable grip force levels.
+The electrical design consists of four fingers with four different tendon-driven mechanisms actuated by four micro-DC motors, a passive thumb which magnetically locks in two discrete positions and wrist rotation driven by planetary gears and a DC motor. 
 
-Basically, the electronic system consists of:
+The electronic system consists of:
 * The circuit and controller code
 * The circuit housing and socket
 * The batteries housing
 
 
-The electronic system presented here allows also a Bluetooth communication between the Hand and you phone for setting configuration and a modular sensors control (see our [Mobile App](https://github.com/Haifa3D/haifa3d-hand-app)). For more details on how to manufacture and assemble the hand, please check out our [Mechanical Design](https://github.com/Haifa3D/hand-mechanical-design). 
+The electronic system presented here also allows a Bluetooth communication between the Hand and your phone for settings configuration and a modular sensors control (see our [Mobile App](https://github.com/Haifa3D/haifa3d-hand-app)). For more details on how to manufacture and assemble the hand, please check out our [Mechanical Design](https://github.com/Haifa3D/hand-mechanical-design). 
 
 ## Who can benefit from this Design?  
 The design is suitable for users with transradial amputation (below the elbow).
-We welcome any new developers to enhance our design or to use the Oded Hand as a simulator for your new sensors/algorithms/methods that would potentially help users to control their prosthetic hand.
+We welcome any new developers to enhance our design or to use the Oded Hand as a simulator for your new sensors/algorithms/methods that would potentially help users with controling their prosthetic hand.
 
 ## Design Files and Versions  
 The STL files for the battery housing and the circuit housing can be found [here](CAD_files). The gerber files of the PCB design can be found [here](gerber_files/CAMOutputs) as well as the [schematic and layout](docs). The EAGLE files for modifying the board can be found [here](EAGLE_files). The Arduino code for the controller can be downloaded from [here](controller_software/Oded_Hand_board7_app2_4_6).
@@ -45,7 +45,7 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 
 * order all the components from the list above.
 
-* Cut the drv8833 according to [Pololu's instructions](https://www.pololu.com/product/2130) and check the Isense pins are NOT grounded:
+* Cut the drv8833 according to [Pololu's instructions](https://www.pololu.com/product/2130) and check that both of the Isense pins are NOT grounded:
 <img src="images/drv8833.PNG" alt="diagram" width="277"/> 
 [image was taken from Pololu website]
 
@@ -55,7 +55,7 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 <img src="images/drv8833_board.PNG" alt="diagram" width="277"/> 
 [image was taken from Pololu website]
 
-* Solder the top side of the board (all components without the ESP32 and resistors)
+* Solder the top side of the board (all components except the ESP32 and resistors)
 <img src="images/Oded's_Hand_v7_CAD_top.png" alt="diagram" width="277"/>
 
 *Tip: start from the led(the smallest pitch) --> drivers (drv8833)-->connectors --> button --> Switch
@@ -65,7 +65,7 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 * Upload the [arduino code](controller_software/Oded_Hand_board7_app2_4_6) to the esp32, and only then solder the esp32 and the resistors (making sure there is no previous code that might cause problem to the component when it turned on.
 <img src="images/Oded's_Hand_v7_CAD_bottom.png" alt="diagram" width="277"/>
 
-If it is the first time you are using the controller - download our [Mobile App](https://play.google.com/store/apps/details?id=com.gjung.haifa3d), connect to the hand, go to configuration and click on rest all configurations parameters and presets parameters before any other action.
+If it is the first time you are using the controller - download our [Mobile App](https://play.google.com/store/apps/details?id=com.gjung.haifa3d), connect to the hand, go to configuration and click on rest all configuration parameters and preset parameters before any other action.
 
 After you complete the PCB assembly of Oded's Hand, please refer to the [Mechanical Design](https://github.com/Haifa3D/hand-mechanical-design) to assemble the mechanical parts of Oded's Hand. If you have already assembled the mechanical and the electrical parts, you are welcome to check out our [Mobile App](https://github.com/Haifa3D/haifa3d-hand-app) to refine the controller parameters and to define your favorite hand movements.
 
@@ -82,16 +82,17 @@ To assemble the circuit housing you will need **3 x M2.5 5-8mm self tap screws**
 
 <img src="images/circuit_housing.jpg" alt="diagram" width="382"/>
 
-*the circuit on the socket is from a previous version where we had 3 more buttons on the hand instead of the mobile app control.*
+*The pictured circuit on the socket is from a previous version where we had 3 buttons on the hand instead of the mobile app for control.*
 
 ## The Batteries Housing
-You can use any two connected batteries in series to power the circuit. To assemble your own battery pack:
+You can use any two connected batteries in series to power the circuit. 
+To assemble your own battery pack:
 * print the [batteries housing files](CAD_files/batteries_housing) (*Notice the printing orientation - the 'battery_top' should be printed so its snap is parallel to the ground*)
-* make sure the batteries can slide in and does not get stuck at the housing walls.
+* make sure the batteries can slide in smoothly without getting stuck at the housing walls.
 * Solder the battery Spring Contact Plate - at the 'battery-top' (the lid) the plates should be soldered to each other and at the bottom each plate should be soldered to a different wire (the maximal total current can be 2.5 amp so make sure you select a suitible wire)
-* Insert the filaments to mount the contact plates to the rectangular slots at the top and bottom parts. make sure the plates are not touching each other at the bottom part (otherwise you are going to short the batteries).
-* cut the excessive filaments and heat the ends (see the yellow fillaments in the image below)
-* screw the bottom prat to the body using two **M2 4-5mm self tap screws**
+* Insert the filaments to mount the contact plates to the rectangular slots at the top and bottom parts. Make sure the plates are not touching each other at the bottom part (otherwise you are going to short the batteries).
+* cut the excess filaments and heat the ends (see the yellow fillaments in the image below)
+* screw the bottom part to the body using two **M2 4-5mm self tap screws**
 * check the connection and add a 2PIN Female KF2510 Connector to the wires.
 * cut an elastic strap and sew velcro (or just buy a suitible velcro elatic strap) to fasten the Battery Pack to your upper arm. a design for backles and rings are also available at the same folder.
 
