@@ -103,7 +103,7 @@ If you have developed a user interface for prosthetic hands and want to implemen
 * if your sensors and system are on the hand and arm - you can implement your code to our controller code and solder your system to the free pins (GPIO2,12,25)
 * if your system is android-based - use our [**mobile app and SDK**](https://github.com/Haifa3D/haifa3d-hand-app) to wirelessly communicate with our Hand 
 * if your system is esp32-based - use the example Arduino IDE code [here](controller_software/Hand_UI_demo_BLEclient) to communicate with our Hand using the built-in BLE of the esp32 controller.
-* if your system is based on Python code - use the [communication example-code](python_communication_code/) to trigger different hand movements
+* if your system is based on Python code - use the [communication example Pyhotn code](python_communication_code/) to trigger different hand movements
 
 ## Acknowledgements:
 This project was done by a group of great people and with the help and guidance of generous organizations.
