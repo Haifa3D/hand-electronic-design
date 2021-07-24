@@ -1,0 +1,9 @@
+working with Arduino IDE on ESP32:
+https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+
+Libraries installation:
+tools > manage Libraries...
+
+install:
+ESP32 AnalogWrite
+ESP32 BLE Arduino
