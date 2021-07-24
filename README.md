@@ -39,6 +39,7 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 | RGB LED Common Cathode | 1 | Common Cathode | [aliexpress](https://www.aliexpress.com/item/32666259962.html?spm=a2g0s.9042311.0.0.27424c4dhW29h7) |
 | Li-ion 18650 battery | 2-4 | >2500mAh | [aliexpress](https://www.aliexpress.com/item/32928155604.html?spm=a2g0s.9042311.0.0.27424c4dhW29h7) |
 | battery Spring Contact Plate For AA AAA Battery | 4 | =< 12x12 mm |[aliexpress](https://www.aliexpress.com/item/1005001308633882.html?spm=a2g0o.detail.1000014.4.231d5d481DZZjH&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.33416.205061.0&scm_id=1007.33416.205061.0&scm-url=1007.33416.205061.0&pvid=e82892c5-870e-4ffe-bb26-f0607f6946e2&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.33416.205061.0,pvid:e82892c5-870e-4ffe-bb26-f0607f6946e2,tpp_buckets:668%230%23131923%2347_668%23888%233325%235_23416%230%23205061%2320_23416%234721%2321967%23165_23416%234722%2321972%2310_668%232846%238112%231997_668%232717%237562%23468_668%231000022185%231000066059%230_668%233422%2315392%23668_4452%230%23211409%230_4452%233474%2315675%2389_4452%234862%2322449%23497_4452%233098%239599%23887_4452%235108%2323442%23113_4452%233564%2316062%236) |
+| Resistors (through hole) |  | 1x2M, 1x1M, 1x10K, 2x100ohm, 1x150ohm, 5x(0.5-0.7)ohm | |
 
 ### Instructions
 * send the [gerber files](gerber_files/CAMOutputs) for manufacturing at one of the availble online services (for instance, check out [PCBWay](https://www.pcbway.com/))
@@ -62,7 +63,7 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 
 * Check all connections with a multimeter, to make sure everything was soldered correctly. Then cut all the pins so when you insert the esp32 controller to the bottom part nothing touches the controller. 
 
-* Upload the [arduino code](controller_software/Oded_Hand_board7_app2_4_6) to the esp32, and only then solder the esp32 and the resistors (making sure there is no previous code that might cause problem to the component when it turned on.
+* Upload the [arduino code](controller_software/Oded_Hand_board7_app2_4_6) to the esp32 or an empty code, and only then solder the esp32 and the resistors (making sure there is no previous code that might cause problem to the component when it turned on). For the resistors: 1M and 2M for the voltage divider, 10K for the button, 2x100 and 1x150 ohm for the LEDs, 5x0.5ohm for the Rsense (you can use also 0.7 ohm)
 <img src="images/Oded's_Hand_v7_CAD_bottom.png" alt="diagram" width="277"/>
 
 If it is the first time you are using the controller - download our [Mobile App](https://play.google.com/store/apps/details?id=com.gjung.haifa3d), connect to the hand, go to configuration and click on rest all configuration parameters and preset parameters before any other action.
