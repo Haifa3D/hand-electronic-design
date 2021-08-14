@@ -59,25 +59,25 @@
 /*************************************************************************************/
 // motors Connection - change between IN1 and IN2 if the motor moves at the reverse direction 
 // and change between groups (each group consists of 3 values: IN1, IN2, ISENSE) if the wrong motor is moving.
-#define W_IN1     19 //26 
-#define W_IN2     21 //27 
-#define W_ISENSE  34 //36 
+#define W_IN1     26 
+#define W_IN2     27 
+#define W_ISENSE  36 
 
-#define F1_IN1    26 //19 
-#define F1_IN2    27 //21 
-#define F1_ISENSE 36 //34 
+#define F1_IN1    19 
+#define F1_IN2    21 
+#define F1_ISENSE 34 
 
-#define F2_IN1    18 //23 
-#define F2_IN2    17 //22 
-#define F2_ISENSE 33 //35 
+#define F2_IN1    23 
+#define F2_IN2    22 
+#define F2_ISENSE 35 
 
-#define F3_IN1    16 //4  
-#define F3_IN2    4 //16 
+#define F3_IN1    4  
+#define F3_IN2    16 
 #define F3_ISENSE 32 
 
-#define F4_IN1    23 //18 
-#define F4_IN2    22 //17 
-#define F4_ISENSE 35 //33 
+#define F4_IN1    18 
+#define F4_IN2    17 
+#define F4_ISENSE 33 
 
 const int all_motors[MOTORS_NUM*2]={W_IN1,W_IN2,F1_IN1,F1_IN2,F2_IN1,F2_IN2,F3_IN1,F3_IN2,F4_IN1,F4_IN2};
 const int all_controls[MOTORS_NUM*2]={W_ISENSE,F1_ISENSE,F2_ISENSE,F3_ISENSE,F4_ISENSE};
