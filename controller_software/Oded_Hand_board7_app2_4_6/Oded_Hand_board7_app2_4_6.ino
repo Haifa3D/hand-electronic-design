@@ -120,8 +120,8 @@ unsigned long t_press; // the time when a button press was strated
 
 // battery function - parameters and declaration:
 #define DT_BATTERY_STATUS  (10 * 60 * 1000) //check battery every 10 min
-#define BATTERY_MIN 1512  //=~6v , 385 esp unit =~1v for ADC_11db
-#define BATTERY_MAX 1985  //=~8.4v
+#define BATTERY_MIN 770  //=~6v , 385 esp unit =~1v for ADC_11db and voltage devider of 1/3
+#define BATTERY_MAX 1078  //=~8.4v
 unsigned long t_check_battery; //the elapsed time between battery status checks
 uint8_t battery_level = 100; // battery status in [%]
 
@@ -924,10 +924,11 @@ void check_battery_status(){
     int battery_raw = analogRead(battery_pin);
     delay(20);
     battery_raw = (battery_raw + analogRead(battery_pin))/2;
-    battery_level = ((battery_raw-BATTERY_MIN)*100) / (BATTERY_MAX-BATTERY_MIN);
+    if (battery_raw > BATTERY_MAX) battery_level = 100;
+    else if (battery_raw < BATTERY_MIN) battery_level = 0;
+    else battery_level = ((battery_raw-BATTERY_MIN)*100) / (BATTERY_MAX-BATTERY_MIN);
     if (is_debug) Serial.printf("value %i, calculated value %i\n",battery_raw,int(battery_level)); //debugging
-    if (battery_level > 100) battery_level = 100;
-    else if (battery_level < 0) battery_level = 0;
+    
     BatteryLevelCharacteristic.setValue(&battery_level, 1);
     BatteryLevelCharacteristic.notify();
     //controller indications:
