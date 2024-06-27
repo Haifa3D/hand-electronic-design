@@ -73,6 +73,22 @@ After you complete the PCB assembly of Oded's Hand, please refer to the [Mechani
 ## The Controller Software (Arduino code):
 The code can be found [here](controller_software/Oded_Hand_board7_app2_4_6)
 
+All installation instruction can be found in the code.
+
+In general:
+
+*working with Arduino IDE on ESP32:*
+
+*https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/*
+
+*Arduino IDE supported version ~1.8.15*
+
+*install the following libraries:*
+
+*ESP32 AnalogWrite by ERROUAGUY 0.1.0*
+
+*ESP32 BLE Arduino Kolban/Krempa 1.0.1*
+
 ## The Circuit Housing and Socket
 [Here](hand-electronic-design/CAD_files/circuit_housing), you can find the CAD of the circuit itself, the housing of the circuit top and bottom parts and the socket design we are using.
 The socket is basically a flat surface which can be thermoformed and adjusted to fit the user arm. Usually the important measurements are the perimeter and length of the user's arm.
