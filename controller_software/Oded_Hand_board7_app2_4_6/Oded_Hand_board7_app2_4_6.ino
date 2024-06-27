@@ -7,8 +7,10 @@
  * Libraries installation:
  * go to tools > manage Libraries...
  * install the following libraries:
- * ESP32 AnalogWrite
- * ESP32 BLE Arduino
+ * ESP32 AnalogWrite by ERROUAGUY 0.1.0
+ * ESP32 BLE Arduino Kolban/Krempa 1.0.1
+ *
+ * Arduino IDE supported version ~1.8.15
  *
  * The event holder here assigns tasks for each event. The structures is as follow:
  * task_type 0   :   do nothing
@@ -120,8 +122,8 @@ unsigned long t_press; // the time when a button press was strated
 
 // battery function - parameters and declaration:
 #define DT_BATTERY_STATUS  (10 * 60 * 1000) //check battery every 10 min
-#define BATTERY_MIN 770  //=~6v , 385 esp unit =~1v for ADC_11db and voltage devider of 1/3
-#define BATTERY_MAX 1078  //=~8.4v
+#define BATTERY_MIN 1400  //=~6v , 385 esp unit =~1v for ADC_11db and voltage devider of 1/3
+#define BATTERY_MAX 1800  //=~8.4v
 unsigned long t_check_battery; //the elapsed time between battery status checks
 uint8_t battery_level = 100; // battery status in [%]
 
