@@ -66,9 +66,9 @@ To build the electronic system for Oded Hand you will need a basic knowledge of 
 * Upload the [arduino code](controller_software/Oded_Hand_board7_app2_4_6) to the esp32 or an empty code, and only then solder the esp32 and the resistors (making sure there is no previous code that might cause problem to the component when it turned on). For the resistors: 1M and 2M for the voltage divider, 10K for the button, 2x100 and 1x150 ohm for the LEDs, 5x0.5ohm for the Rsense (you can use also 0.7 ohm)
 <img src="images/Oded's_Hand_v7_CAD_bottom.png" alt="diagram" width="277"/>
 
-If it is the first time you are using the controller - download our [Mobile App](https://play.google.com/store/apps/details?id=com.gjung.haifa3d), connect to the hand, go to configuration and click on rest all configuration parameters and preset parameters before any other action.
-
 After you complete the PCB assembly of Oded's Hand, please refer to the [Mechanical Design](https://github.com/Haifa3D/hand-mechanical-design) to assemble the mechanical parts of Oded's Hand. If you have already assembled the mechanical and the electrical parts, you are welcome to check out our [Mobile App](https://github.com/Haifa3D/haifa3d-hand-app) to refine the controller parameters and to define your favorite hand movements.
+
+### **If it is the first time you are using the controller - download our [Mobile App](https://play.google.com/store/apps/details?id=com.gjung.haifa3d), connect to the hand, go to configuration and click on RESET Configuration and RESET Presets before any other action.**
 
 ## The Controller Software (Arduino code):
 The code can be found [here](controller_software/Oded_Hand_board7_app2_4_6)
