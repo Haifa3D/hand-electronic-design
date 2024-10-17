@@ -81,6 +81,8 @@ In general:
 
 *https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/*
 
+*Board Manager: esp32 by Espressif Systems 1.0.6~*
+
 *Arduino IDE supported version ~1.8.15*
 
 *install the following libraries:*
