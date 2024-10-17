@@ -3,6 +3,8 @@
  * 
  * working with Arduino IDE on ESP32:
  * https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+ * Board Manager:
+ * esp32 by Espressif Systems 1.0.6~
  *
  * Libraries installation:
  * go to tools > manage Libraries...
